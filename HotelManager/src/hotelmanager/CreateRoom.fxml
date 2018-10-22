@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanager.CreateRoomController">
+   <children>
+      <ToolBar fx:id="toolBar" prefHeight="75.0" prefWidth="1920.0">
+         <items>
+            <Button fx:id="returnHome" mnemonicParsing="false" onMouseClicked="#homeReturn" prefHeight="75.0" prefWidth="270.0" text="Home" />
+            <Button fx:id="shutdown" mnemonicParsing="false" onMouseClicked="#closeApplication" prefHeight="75.0" prefWidth="270.0" text="Shutdown" />
+         </items></ToolBar>
+      <ProgressBar fx:id="progressBar" layoutX="36.0" layoutY="999.0" prefHeight="50.0" prefWidth="300.0" progress="0.0" />
+      <ComboBox fx:id="roomOptions" layoutX="100.0" layoutY="160.0" prefHeight="150.0" prefWidth="320.0" promptText="Room Type" />
+      <Slider fx:id="bedCounter" layoutX="100.0" layoutY="376.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="1" prefHeight="75.0" prefWidth="320.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Label fx:id="numberofbeds" layoutX="123.0" layoutY="355.0" text="Number of Beds:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="hasKitchen" layoutX="100.0" layoutY="509.0" mnemonicParsing="false" text="Add Kitchen" />
+      <ToggleButton fx:id="hasPrivacyBedding" layoutX="287.0" layoutY="509.0" mnemonicParsing="false" text="Private Bedrooms" />
+      <ComboBox fx:id="bathroomPick" layoutX="93.0" layoutY="597.0" prefWidth="150.0" promptText="Bathroom Tier" />
+   </children>
+</AnchorPane>

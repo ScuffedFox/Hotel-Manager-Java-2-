@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="background" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanager.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox fx:id="navBar" prefHeight="1080.0" prefWidth="480.0">
+         <children>
+            <Button fx:id="searchRoom" mnemonicParsing="false" prefHeight="270.0" prefWidth="480.0" text="Search Room" textFill="ALICEBLUE" />
+            <Button fx:id="createRoom" mnemonicParsing="false" onMouseClicked="#openCreateRoom" prefHeight="270.0" prefWidth="480.0" text="Create Room" textFill="ALICEBLUE" />
+            <Button fx:id="schedulePage" mnemonicParsing="false" prefHeight="270.0" prefWidth="480.0" text="Schedule" textFill="ALICEBLUE" />
+            <Button fx:id="exitApp" mnemonicParsing="false" onMouseClicked="#closeApplication" prefHeight="270.0" prefWidth="480.0" text="Shutdown" textFill="ALICEBLUE" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
